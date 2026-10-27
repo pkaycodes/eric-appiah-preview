@@ -238,34 +238,41 @@ body.loaded .hero-foot { opacity: 1; }
 @media (max-width: 540px) {
   .nav-actions .btn-nav { display: none; }
   .brand-text small { display: none; }
-  .hero-name { font-size: clamp(5rem, 23.5vw, 7.6rem); }
+  .hero-name { font-size: clamp(4.2rem, 18vw, 6rem); }
   .hero-eyebrow { font-size: 9px; letter-spacing: 0.13em; }
-  .hero-actions .btn { width: 100%; }
-  .hero-actions { gap: 0.6rem; }
-  .hero-roles { margin-top: 2.2rem; }
-  .hero-roles li { font-size: 10.5px; }
-  .portrait-wrap { max-width: 340px; }
-  .seal { left: -16px; bottom: -24px; width: 108px; height: 108px; }
-  .portrait figcaption { font-size: 7.5px; }
-  .hero-foot { margin-top: 2.4rem; }
-  .hero-foot .hero-socials { margin-left: auto; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 0.7rem; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-roles { margin-top: 2rem; }
+  .hero-roles li { font-size: 10px; }
+  .hero-roles ul { flex-wrap: wrap; gap: 0.5rem 0.8rem; }
+  .portrait-wrap { max-width: 320px; margin: 0; }
+  .seal { left: -12px; bottom: -18px; width: 96px; height: 96px; }
+  .portrait figcaption { font-size: 7.5px; padding: 0.5rem 0.7rem; }
+  .hero-foot { margin-top: 2rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .hero-foot .hero-socials { margin-left: 0; }
 
   .stat-label { font-size: 8px; }
-  .display { font-size: clamp(2.5rem, 10.5vw, 3.4rem); }
-  .manifesto-quote p { font-size: clamp(2.9rem, 13vw, 4rem); }
+  .display { font-size: clamp(2.3rem, 9.5vw, 3.2rem); }
+  .manifesto-quote p { font-size: clamp(2.6rem, 12vw, 3.6rem); }
+  .container { width: min(calc(100% - 2rem), 1400px); }
+  :root { --gutter: 1rem; }
 
-  .speaking-num { font-size: 4.2rem; }
-  .speaking-intro h2 { font-size: clamp(2.4rem, 10.5vw, 3.2rem); }
+  .speaking-num { font-size: 3.8rem; }
+  .speaking-intro h2 { font-size: clamp(2.2rem, 9.5vw, 2.9rem); }
+  .talk { grid-template-columns: 32px minmax(0, 1fr); gap: 0.7rem; }
+  .talk-index { font-size: 10px; }
 
   .credential-list li { grid-template-columns: 1fr 30px; }
   .credential-list span { grid-column: 1; }
   .credential-list strong { grid-column: 1; }
   .credential-list em { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
 
-  .contact-form { padding: 1.4rem; }
-  .footer-links { grid-template-columns: 1fr; }
-  .footer-wordmark { font-size: 21vw; }
-  .footer-bottom { font-size: 7.5px; }
+  .contact-form { padding: 1.2rem; }
+  .contact-links > a { grid-template-columns: 28px minmax(0, 1fr); }
+  .contact-links .link-arrow { display: none; }
+  .footer-links { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-wordmark { font-size: 24vw; }
+  .footer-bottom { font-size: 7.5px; flex-direction: column; align-items: flex-start; gap: 0.6rem; }
 
   .press-hero h1 { font-size: 3.6rem; }
   .fact-grid { grid-template-columns: 1fr; }
